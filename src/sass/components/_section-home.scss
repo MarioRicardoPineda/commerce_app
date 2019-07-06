@@ -1,0 +1,51 @@
+[class^=section-]{
+    height: calc(100vh - 4rem);
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    h2{
+        width: 75%;
+        font-size: 2.4em;
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+    p{
+        padding: 1.5em;
+    }
+}
+
+.section-1, .section-3{
+    background-color: $blue-color;
+}
+
+.section-2{
+    background-color: $main-color;
+    h2{
+        color: $blue-color;
+    }
+}
+
+.container-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $desktop){
+
+        justify-content: space-around;
+        align-items: center;
+        
+        article{
+            width: 40%;
+            text-align: left;
+            h2{
+                padding: 20px;
+                margin: 0;
+            }
+        }
+
+        img{
+            margin-top: 4.5em;
+        }
+    }
+}

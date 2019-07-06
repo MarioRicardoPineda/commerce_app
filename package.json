@@ -1,0 +1,42 @@
+{
+  "name": "commerce_app",
+  "version": "1.0.0",
+  "description": "Diseño para una web de comercio",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server -d --open",
+    "build": "rimraf public && webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarioRicardoPineda/commerce_app.git"
+  },
+  "keywords": [
+    "null"
+  ],
+  "author": "Ricardo Pineda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarioRicardoPineda/commerce_app/issues"
+  },
+  "homepage": "https://github.com/MarioRicardoPineda/commerce_app#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "rimraf": "^2.6.3",
+    "sass-loader": "^7.1.0",
+    "url-loader": "^2.0.1",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  }
+}

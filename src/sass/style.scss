@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+// Configuraciones
+@import "./config/variables";
+@import "./config/reset";
+@import "./config/mixins";
+
+// Componentes
+
+@import "./components/header-home";
+@import "./components/section-home";
+// @import "./components/";

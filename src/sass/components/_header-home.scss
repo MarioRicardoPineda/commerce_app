@@ -1,0 +1,185 @@
+
+//  Barra de menu
+.container-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    box-shadow: 0 3px 15px rgba(darken($blue-color, 25%), .3);
+    background-image: linear-gradient(120deg, $blue-color, $main-color);
+    padding:1em;
+    z-index: 100;
+}
+
+// Menu
+.menu{
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 4rem);
+    width: 70%;
+    background-color: $blue-color;
+    transform: translateX(-1000px);
+    transition: .3s ease; 
+
+    .menu-link{
+        width: 100%;
+        font-size: 1.2em;
+        color: #fff;
+        border-bottom: 1px solid $gray-color;
+        padding:1em;
+        margin-top: 0.8em;
+        cursor:pointer; 
+    }
+}
+
+.menu-ham{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    .bar{
+        display: block;
+        height: 5px;
+        width: 100%;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+}
+
+@media screen and (min-width: $desktop){
+
+    .container-menu{
+        background-image: linear-gradient(90deg, $blue-color, $main-color);
+    }
+
+    .menu-ham{
+        display: none;
+    }
+
+    .menu{
+        flex-direction: row;
+        align-items: center;
+        height: 4rem;
+        width: 30%;
+        top: 0;
+        background: none;
+        position: relative;
+        transform: translateX(0);
+
+        .menu-link{
+            text-align: center;
+            border:none;
+            &:hover{
+                border-top: 2px solid #fff;
+            }
+        }
+    }
+}
+
+// Banner
+
+.banner{
+    margin-top: 4rem;
+}
+
+.fondo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    background-image: linear-gradient(120deg, $blue-color, $main-color );
+
+    .phone{
+        display: flex;
+        justify-content: center;
+        order: 2;
+        width: 100%;
+        height: 70%;
+        position: relative;
+
+        img{
+            width: 450px;
+            position: absolute;
+            bottom: 0;
+        }
+        img:nth-child(1){
+            width: 300px;
+            left:0;
+        }
+    }
+
+    .txt-app{
+        order:1;
+        width: 90%;
+        height: 30%;
+        text-align: center;
+        padding: 1em;
+        margin-right: auto;
+        margin-left: auto;
+
+        h1,p{
+            color: #fff;
+            margin-bottom: .5em;
+        }
+
+        h1{
+            font-size: 2em;
+            font-weight: 800;
+        }
+        .play-store{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+    }
+
+    @media screen and (min-width: $desktop){
+
+        background-image: linear-gradient(90deg, $blue-color, $main-color );
+
+        .phone, .txt-app{
+            width: 50%;
+            height: 100%;
+        }
+
+        .phone{
+            order: 1;
+            img{
+                width: 570px;
+            }
+            img:nth-child(1){
+                width: 400px;
+            }
+        }
+
+        .txt-app{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+
+            h1{
+                font-size: 4em;
+            }
+            p{
+                width: 90%;
+                font-size: 18px;
+            }
+            .play-store{
+                justify-content: flex-start;
+                img{
+                    margin-right: 1.4em;
+                }
+            }
+        }
+    }
+
+}
