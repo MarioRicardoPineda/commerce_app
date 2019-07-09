@@ -22,10 +22,11 @@
     display: flex;
     flex-direction: column;
     height: calc(100vh - 4rem);
-    width: 70%;
+    width: 80%;
     background-color: $blue-color;
     transform: translateX(-1000px);
     transition: .3s ease; 
+    box-shadow: 3px 3px 10px rgba(#000, .5);
 
     .menu-link{
         width: 100%;
@@ -36,6 +37,9 @@
         margin-top: 0.8em;
         cursor:pointer; 
     }
+}
+.menu-slader{
+    transform :translateX(0);
 }
 
 .menu-ham{
@@ -73,6 +77,7 @@
         background: none;
         position: relative;
         transform: translateX(0);
+        box-shadow: none;
 
         .menu-link{
             text-align: center;

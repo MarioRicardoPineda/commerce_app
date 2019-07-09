@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Commerce App</title>
 
+    <script src="https://kit.fontawesome.com/fa9cda3c98.js"></script>
 </head>
 <body>
 
@@ -16,11 +17,13 @@
         <div class="container-menu">
             <!-- Logo -->
             <div class="logo">
-                <img src="./assets/img/logo.png" alt="">
+                <a href="./index.html">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
             </div>
 
             <!-- Menu de hamburguesa -->
-            <div class="menu-ham">
+            <div class="menu-ham" id="menu-ham">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -28,9 +31,9 @@
             </div>
 
             <!-- Menu principal -->
-            <nav class="menu">
+            <nav class="menu" id="menu">
                 <a href="./index.html" class="menu-link">Home</a>
-                <a href="./index.html" class="menu-link">commerce</a>
+                <a href="./commerce.html" class="menu-link">commerce</a>
             </nav>
         </div>
 
@@ -53,7 +56,7 @@
 
     </header>
 
-    <main style="background-color: #444;">
+    <main>
 
         <section class="section-1">
             <div class="container-section">
@@ -90,7 +93,69 @@
                 <img src="./assets/img/phone4.png" alt="">
             </div>
         </section>
+        <!-- seccion separada -->
+        <section class="section-4">
+            <div class="container-section">
+                <article>
+                    <div>
+                        <h2>¡Aumenta tus ventas!</h2>
+                        <p>Sé parte de nuestros socios estratégicos. Únete a ComerceApp para llegar a más clientes y aumentar tus ventas.</p>
+                    </div>
+                    <a href="#s" class="btn">Leer más</a>
+                </article>
+                <img src="./assets/img/Rectangle.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- Preguntas frecuentes -->
+        <section class="questions">
+            <!-- Contenedor de la pregunta -->
+            <article class="questions-container">
+                <h3 class="question">Preguntas frecuentes?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt excepturi neque aut obcaecati quo ipsa est, a cum voluptate cumque accusantium magnam! Consectetur aut quo aperiam exercitationem odio.</p>
+            </article>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <form>
+            <h3>Contáctanos</h3>
+            <div class="inputs">
+               <div class="field-form">
+                    <label for="">Nombre</label>
+                    <input type="text" name="" id="" placeholder="Camero Rogers">
+               </div>
+                <div class="field-form">
+                    <label for="">Email</label>
+                    <input type="text" name="" id="" placeholder="sheila.legros@hotmail.com">
+                </div>
+               <div class="field-form">
+                    <label for="">Mensaje</label>
+                    <input type="text" name="" id="" placeholder="Escribe tu consulta...">
+               </div>
+               <a href="#s" class="btn">Enviar Mensaje</a>
+            </div>
+        </form>
+
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="socials">
+            <img src="./assets/img/logo.png" alt="">
+            <div class="social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+        <article>
+            <p>&copy; Commerce. Todos los derechos reservados</p>
+            <div class="ters">
+                <a href="#s" class="ter">Términos y Condiciones  |</a>  
+                <a href="#s" class="ter">Políticas de Privacidad</a>
+            </div>
+        </article>
+    </footer>
 
 </body>
 </html>

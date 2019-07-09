@@ -67,11 +67,14 @@ module.exports = {
     },
 
     plugins : [
-        new MiniCssExtractPlugin({
-            filename : 'css/[name]-style.css'
-        }),
         new HtmlWebpackPlugin({
             template : './src/index.html'          
+        }),
+        new HtmlWebpackPlugin({
+            template : './src/commerce.html'          
+        }),
+        new MiniCssExtractPlugin({
+            filename : 'css/[name]-style.css'
         })
     ] //.concat(multiplesFiles)
 

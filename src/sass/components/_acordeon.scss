@@ -1,0 +1,22 @@
+.questions{
+    margin-top: 3em;
+
+    &-container{
+        padding: 25px ;
+        .question{
+            font-size: 1.5em;
+        }
+
+        p{
+            height: 0;
+            padding: 10px 0 0 2.2em;
+            transition: .6s ease;
+            opacity: 0;
+            
+            &.ans{
+                height: auto;
+                opacity: 1;
+            }
+        }
+    }
+}
