@@ -68,10 +68,13 @@ module.exports = {
 
     plugins : [
         new HtmlWebpackPlugin({
+            filename : "index.html",
             template : './src/index.html'          
         }),
         new HtmlWebpackPlugin({
-            template : './src/commerce.html'          
+            filename : "commerce.html",
+            template : './src/commerce.html',
+            chunks : []
         }),
         new MiniCssExtractPlugin({
             filename : 'css/[name]-style.css'
