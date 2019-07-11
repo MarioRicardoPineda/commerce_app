@@ -73,8 +73,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename : "commerce.html",
-            template : './src/commerce.html',
-            chunks : []
+            template : './src/commerce.html'
         }),
         new MiniCssExtractPlugin({
             filename : 'css/[name]-style.css'
