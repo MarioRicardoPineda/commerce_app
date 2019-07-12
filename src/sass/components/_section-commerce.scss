@@ -2,6 +2,9 @@
     width: 90%;
     margin: 3em auto;
 
+    img{
+        display: none;
+    }
     h2{
         font-size: 3.5em;
         font-weight: 800;
@@ -22,11 +25,34 @@
             color: #999;
         }
     }
+
+    @media screen and (min-width: $desktop){
+        width: 100%;
+        .art-ben{
+            display: flex;
+        }
+
+        img{
+            order: 2;
+            display: block;
+            position: relative;
+            left: -10px;
+        }
+        .container-ben{
+            order: 1;
+            h2{
+                font-size: 3em;
+            }
+        }
+    }
 }
 
 .reduce{
     overflow: hidden;
 
+    .oculto{
+        display: none;
+    }
     .art-re{
         width: 90%;
         margin: 0 auto 3em;
@@ -41,14 +67,35 @@
             margin-bottom: 1.5em;
         }
     }
+
+    @media screen and (min-width: $desktop){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .art-re{
+            width: 40%;
+            text-align: left;
+        }
+        .container-img{
+            width: 50%;
+        }
+        .oculto, img{
+            display: block;
+            width: 100%;
+        }
+        
+    }
 }
 
 .reporte{
     background-color: $blue-color;
     overflow: hidden;
+    height: calc( 100vh - 4rem);
 
     .art-reporte{
         width: 90%;
+        height: 100%;
         margin: 3em auto;
         color: #fff;
         text-align: center;
@@ -60,6 +107,24 @@
         }
         p{
             margin-bottom: 2em;
+        }
+    }
+    @media screen and (min-width: $desktop){
+        
+        .art-reporte{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            div{
+                padding: 15px;
+                width: 40%;
+                text-align: left;
+            }
+            img{
+                display: block;
+                width: 60%;
+            }
         }
     }
 }
@@ -92,7 +157,7 @@
 
     .card{
         position: relative;
-        width: 80%;
+        width: 400px;
         margin:0 auto 2.5em;
         border-radius: 5px;
         padding: 2.5em 2.5em 4.5em;
@@ -145,6 +210,32 @@
 
             &:hover{
                 background-color: lighten($blue-color, 12%);
+            }
+        }
+    }
+
+    @media screen and (min-width: $desktop){
+        display: flex;
+
+        .cards{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 70%;
+
+            .card{
+                height: 65%;
+            }
+        }
+
+        .art-ser{
+            width: 30%;
+            margin: 0;
+            align-self: center;
+            text-align: left;
+            padding: 15px;
+            h2{
+                font-size: 2em;
             }
         }
     }

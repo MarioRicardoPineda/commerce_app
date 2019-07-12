@@ -13,19 +13,17 @@ menuHam.addEventListener('click', menuSlader)
 
 // Acordeón de preguntas
 
-let answer = Array.prototype.slice.apply(document.querySelectorAll(".question"))
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-
-for (let i in answer) {
-
-  answer[i].addEventListener("click", () =>{
-
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
     var panel = this.nextElementSibling;
-    
-    if (panel.classList.contains('ans')) {
-      panel.classList.remove('ans')
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
     } else {
-      panel.classList.add('ans')
-    }
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
   });
 }
