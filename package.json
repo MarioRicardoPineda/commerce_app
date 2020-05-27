@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server -d --open",
-    "build": "rimraf public && webpack -p"
+    "build": "rimraf docs && webpack -p"
   },
   "repository": {
     "type": "git",
@@ -24,8 +24,8 @@
     "@babel/polyfill": "^7.8.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
+    "@babel/core": "^7.10.0",
+    "@babel/preset-env": "^7.10.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
     "html-loader": "^0.5.5",
